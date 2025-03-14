@@ -20,8 +20,6 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 tf.compat.v1.enable_eager_execution()
 print("Eager execution enabled:", tf.executing_eagerly())
 
-
-
 class Training:
     def __init__(self, config):
         self.config = config
@@ -134,4 +132,4 @@ class Training:
 
         print("Model training completed.")
         return history
-    
+
